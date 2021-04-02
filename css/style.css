@@ -315,6 +315,7 @@ body {
   }
 }
 /* FIN SECCION GRID IMAGENES*/
+/* INICIO CONTACTO */
 .body-contacto {
   background-image: url("./../ImagenesEntregaFinal/nature_big_1.jpg");
 }
@@ -342,5 +343,7 @@ div.form {
 .nav-transparent {
   background-color: transparent;
 }
+
+/* FIN CONTACTO */
 
 /*# sourceMappingURL=style.css.map */
