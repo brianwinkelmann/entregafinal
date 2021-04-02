@@ -1,7 +1,6 @@
 /*INDEX*/
-
-.body-index
-{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.body-index {
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,8 +9,8 @@
   height: 100vh;
   background: #000;
 }
-.brianwinkelmann-index
-{
+
+.brianwinkelmann-index {
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -23,206 +22,198 @@
   background-size: 80%;
   animation: animate 3s linear infinite;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255,255,255,0);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
-@keyframes animate
-{
-   0%
-   {
-       background-position: -500%;
-   }
-   100%
-   {
-       background-position: 500%;
-   }
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
-  
-  /* FIN INDEX */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FIN INDEX */
 /*INICIO NAV BAR*/
-
 body {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	right: 0;
-	top: 0;
-	font-family: 'Montserrat', sans-serif;
-	padding: 0 5%;
-	height: 50px;
-	background-color: white;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 5%;
+  height: 50px;
+  background-color: white;
 }
+
 nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: black;
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: black;
 }
+
 nav .links {
-	float: right;
-	padding: 0;
-	margin: 0;
-	width: 60%;
-	height: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
 nav .links li {
-	list-style: none;
+  list-style: none;
 }
+
 nav .links a {
-	display: block;
-	padding: 1em;
-	font-size: 16px;
-	font-weight: bold;
-	color: black;
-	text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
-nav .links a:hover{
-	cursor: pointer;
-	color: red;
-	transition: .5s;
-	transform: translateX(2px);
+
+nav .links a:hover {
+  cursor: pointer;
+  color: red;
+  transition: 0.5s;
+  transform: translateX(2px);
 }
+
 #nav-toggle {
-	position: absolute;
-	top: -100px;
+  position: absolute;
+  top: -100px;
 }
+
 nav .icon-burger {
-	display: none;
-	position: absolute;
-	right: 5%;
-	top: 50%;
-	transform: translateY(-50%);
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
 nav .icon-burger .line {
-	width: 30px;
-	height: 5px;
-	background-color: black;
-	margin: 5px;
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
 }
+
 @media screen and (max-width: 768px) {
-	nav .logo {
-		float: none;
-		width: auto;
-		justify-content: center;
-	}
-	nav .links {
-		float: none;
-		position: fixed;
-		z-index: 9;
-		left: 0;
-		right: 0;
-		top: 50px;
-		bottom: 100%;
-		width: auto;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
-		background-color: rgba(255, 255, 255, 0.8);
-		overflow: hidden;
-		box-sizing: border-box;
-		transition: all .5s ease-in-out;
-	}
-	nav .links a {
-		font-size: 20px;
-	}
-	nav :checked ~ .links {
-		bottom: 0;
-	}
-	nav .icon-burger {
-		display: block;
-	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}
-	
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav .links a {
+    font-size: 20px;
+  }
+
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+
+  nav .icon-burger {
+    display: block;
+  }
+
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
 }
-
 /*FIN NAV BAR*/
-
-
-
-
 /* INICIO SECCION GRID IMAGENES*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  height: fit-content;
 }
-::selection{
+
+::selection {
   color: #fff;
   background: #007bff;
 }
-body{
+
+body {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
-.wrapper{
+
+.wrapper {
   max-width: 1100px;
 }
-.gallery{
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
 }
-.gallery .image{
+.gallery .image {
   padding: 7px;
   width: calc(100% / 3);
 }
-.gallery .image span{
+.gallery .image span {
   display: flex;
   width: 100%;
   overflow: hidden;
 }
-.gallery .image img{
+.gallery .image img {
   width: 100%;
   vertical-align: middle;
   transition: all 0.3s ease;
 }
-.gallery .image:hover img{
+.gallery .image:hover img {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-.preview-box{
+.preview-box {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -235,42 +226,45 @@ body{
   pointer-events: none;
   border-radius: 3px;
   padding: 0 5px 5px 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-.preview-box.show{
+.preview-box.show {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.3s ease;
 }
-.preview-box .details{
+.preview-box .details {
   display: flex;
   align-items: center;
   padding: 12px 15px 12px 10px;
   justify-content: space-between;
 }
-.preview-box .details .title{
+.preview-box .details .title {
   display: flex;
   font-size: 18px;
   font-weight: 400;
 }
-.details .title p{
+
+.details .title p {
   margin: 0 5px;
 }
-.details .title p.current-img{
+.details .title p.current-img {
   font-weight: 500;
 }
-.details .icon{
+.details .icon {
   color: #007bff;
   font-size: 20px;
   cursor: pointer;
 }
-.preview-box .image-box{
+
+.preview-box .image-box {
   display: flex;
   width: 100%;
   position: relative;
 }
-.image-box .slide{
+
+.image-box .slide {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -283,17 +277,20 @@ body{
   text-align: center;
   border-radius: 3px;
 }
-.slide.prev{
+
+.slide.prev {
   left: 0px;
 }
-.slide.next{
+.slide.next {
   right: 0px;
 }
-.image-box img{
+
+.image-box img {
   width: 100%;
   border-radius: 0 0 3px 3px;
 }
-.shadow{
+
+.shadow {
   position: fixed;
   top: 0;
   left: 0;
@@ -301,53 +298,49 @@ body{
   width: 100%;
   z-index: 2;
   display: none;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
 
-@media(max-width: 1000px){
-  .gallery .image{
+@media (max-width: 1000px) {
+  .gallery .image {
     width: auto;
     height: auto;
   }
 }
-@media(max-width: 600px){
-  .gallery .image{
+@media (max-width: 600px) {
+  .gallery .image {
     width: auto;
     height: auto;
     padding: 4px;
   }
 }
-
-
-  /* FIN SECCION GRID IMAGENES*/
-
-
-
-
-  .body-contacto{
-	  background-image: url('./../imagenes/nature_big_1.jpg');
-  }
-  .formulario {
-	margin-top: 50px;
-	width: 50%;
-	height: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: rgba(255, 255, 255, 0.1);
-	z-index: 10;
-  }
-  
-  div.form {
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-  }
-  
-  .boton {
-	margin-top: 20px;
-  }
-
-.nav-transparent{
-	background-color: transparent;
+/* FIN SECCION GRID IMAGENES*/
+.body-contacto {
+  background-image: url("./../ImagenesEntregaFinal/nature_big_1.jpg");
 }
+
+.formulario {
+  margin-top: 50px;
+  width: 50%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+div.form {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.boton {
+  margin-top: 20px;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
