@@ -1,0 +1,29 @@
+/* SOBRE MI */
+  
+  .imagenfondo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-sobremi {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fondosobremi {
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    position: absolute;
+    margin-left: 60%;
+    top: 50%;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    padding-top: 10px;
+  }
+  
+  /* FIN SOBRE MI */
